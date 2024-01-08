@@ -10,8 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/edupooter/curso-javascript-moderno-2021.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Eduardo Pooter Reis",
+  "license": "MIT",
+  "keywords": [
+    "curso",
+    "javascript",
+    "node",
+    "cod3r"
+  ],
   "bugs": {
     "url": "https://github.com/edupooter/curso-javascript-moderno-2021/issues"
   },

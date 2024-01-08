@@ -1,0 +1,21 @@
+{
+  "name": "exemplo-aula-package-json",
+  "version": "1.0.0",
+  "description": "teste-de-init",
+  "main": "outro.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "exemplo",
+    "aula",
+    "node",
+    "npm",
+    "cod3r"
+  ],
+  "author": "Eduardo Pooter Reis",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.5"
+  }
+}
