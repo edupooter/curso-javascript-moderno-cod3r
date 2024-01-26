@@ -2,8 +2,10 @@
   "name": "exemplo-aula-package-json",
   "version": "1.0.0",
   "description": "teste-de-init",
-  "main": "outro.js",
+  "main": "funcionarios.js",
   "scripts": {
+    "start": "nodemon",
+    "dev": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
