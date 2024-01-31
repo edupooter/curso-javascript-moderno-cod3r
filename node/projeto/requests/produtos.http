@@ -1,1 +1,14 @@
+# Lista de produtos
 GET http://localhost:3003/produtos HTTP/1.1
+
+# Exibir produto com id 1
+GET http://localhost:3003/produtos/1 HTTP/1.1
+
+# Incluir produto
+POST  http://localhost:3003/produtos/ HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "Caderno",
+    "preco": "14.95"
+}
