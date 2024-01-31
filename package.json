@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/edupooter/curso-javascript-moderno-2021#readme",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "node-schedule": "1.3.0"
   }
 }
