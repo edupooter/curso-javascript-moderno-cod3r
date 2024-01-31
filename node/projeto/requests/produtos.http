@@ -1,14 +1,27 @@
 # Lista de produtos
 GET http://localhost:3003/produtos HTTP/1.1
 
-# Exibir produto com id 1
-GET http://localhost:3003/produtos/1 HTTP/1.1
-
 # Incluir produto
-POST  http://localhost:3003/produtos/ HTTP/1.1
+POST http://localhost:3003/produtos/ HTTP/1.1
 content-type: application/json
 
 {
     "nome": "Caderno",
     "preco": "14.95"
 }
+
+# Exibir produto com id 1
+GET http://localhost:3003/produtos/1 HTTP/1.1
+
+# Alterar produto com id 1
+PUT http://localhost:3003/produtos/1 HTTP/1.1
+content-type: application/json
+
+{
+    "id": "1",
+    "nome": "Caderno",
+    "preco": "20.90"
+}
+
+# Excluir produto com id 1
+DELETE http://localhost:3003/produtos/1 HTTP/1.1

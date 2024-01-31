@@ -21,7 +21,21 @@ app.post('/produtos/', (req, res, next) => {
         nome: req.body.nome,
         preco: req.body.preco
     })
+    res.status(201).send(produto)
+})
+
+app.put('/produtos/:id', (req, res, next) => {
+    const produto = bancoDados.salvarProduto({
+        id: req.body.id,
+        nome: req.body.nome,
+        preco: req.body.preco
+    })
     res.send(produto)
+})
+
+app.delete('/produtos/:id', (req, res, next) => {
+    const produto = bancoDados.excluirProduto(req.params.id)
+    res.status(204).send(produto)
 })
 
 app.listen(porta, () => {
