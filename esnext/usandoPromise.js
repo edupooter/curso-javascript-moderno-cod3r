@@ -24,16 +24,16 @@ const getTurma = letra => {
 
 let nomes = []
 
-getTurma('A').then(alunos => {
-    nomes = nomes.concat(alunos.map(a => `A: ${a.nome}`))
-    getTurma('B').then(alunos => {
-        nomes = nomes.concat(alunos.map(b => `B: ${b.nome}`))
-        getTurma('C').then(alunos => {
-            nomes = nomes.concat(alunos.map(c => `C: ${c.nome}`))
-            console.log(nomes)
-        })
-    })
-})
+// getTurma('A').then(alunos => {
+//     nomes = nomes.concat(alunos.map(a => `A: ${a.nome}`))
+//     getTurma('B').then(alunos => {
+//         nomes = nomes.concat(alunos.map(b => `B: ${b.nome}`))
+//         getTurma('C').then(alunos => {
+//             nomes = nomes.concat(alunos.map(c => `C: ${c.nome}`))
+//             console.log(nomes)
+//         })
+//     })
+// })
 
 Promise.all([getTurma('A'), getTurma('B'), getTurma('C')])
     .then(turmas => [].concat(...turmas))
